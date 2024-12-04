@@ -1,0 +1,183 @@
+﻿* {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+.overly {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5)
+}
+h1, h2 {
+	font-family: monstserret,sans-serif;
+}
+button {
+	font-family:inherit;
+}
+.bad-y {
+	padding:120px 0;
+}
+.effict {
+	position:relative;
+}
+.effict:after {
+	position:absolute;
+	content:" ";
+	width:0;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	background:#333;
+	transition:width 0.5s;
+}
+.effict:hover:after {
+	width:100%;
+}
+body {
+	font-family: 'Varela Round', sans-serif;
+}
+.header {
+	
+	position:fixed;
+	width:100%;
+	z-index:10;
+	
+}
+.header .nav li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding:  45px 20px;
+}
+.container{
+	width:80%;
+	margin:auto;
+	
+}
+.header .logo {
+	width: 40%;
+	float: left;
+}
+.header .nav {
+	width: 60%;
+	float: left;
+	list-style: none;	
+}
+.clear {
+	clear:both;
+}
+.header .logo img {
+	width: 30%;
+}
+.header .nav li {
+	display: inline-block;
+}
+.home {
+	height: 100vh;
+	background-image: url(../imag/backgraund.jpg);
+	background-size:cover;
+	position:relative;
+}
+.content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align:center;
+}
+.home .titel {
+	color:white;
+	font-size:60px;
+	text-transform:uppercase;
+}
+.home .discriotion {
+	margin:10px 0 ;
+	color: white;
+	letter-spacing:2px;
+	line-height:1.5;
+}
+.home .btn1 {
+	width:150px;
+	padding:13px 0 ;
+	border-radius:5px;
+	cursor:pointer;
+	font-size:20px;
+}
+.home .btn-staet {
+	margin-right:10px;
+	background-color:white;
+
+}
+.home .btn-learn {
+	background-color: blueviolet;
+}
+.havor:hover {
+	opacity:0.8;
+}
+.header .nav li a:after , .header .nav li a.active::after {
+	content: " ";
+	display: block;
+	height: 3px;
+	background-color: dodgerblue;
+	transition: width 0.5s;
+	margin-top:2px;
+}
+.header .nav li a.active::after {	
+	width: 100%;	
+}
+.header .nav li a:after {
+	width: 0%;	
+}
+.header .nav li a:hover::after {
+	width:100%;
+}
+.section {
+	text-align:center;
+}
+.section .section-tatile {
+	font-size:35px;
+	text-transform:capitalize;
+	margin-bottom:10px
+}
+.section .line {
+		display: block;
+		height: 5px;
+		width: 60px;
+		margin:0 auto 70px auto;
+		background-color: dodgerblue;
+		margin:auto;			
+}
+.about-countent {
+	overflow:hidden;
+}
+.item1 {
+	width:30%;
+	float:left;
+	text-align:center;
+	border:1px solid #888;
+	padding:50px 20px;
+	margin:0 0 10px 0 ;
+}
+.item1.mg {
+		margin: 0 5%;
+	}
+.item-tatile{
+	text-transform:capitalize;
+	margin-bottom:15px;
+	transition:color 0.5s;
+	
+}
+.about-countent {
+	padding: 0 0 120px 0 ;
+}
+.item1:hover .item-tatile {
+	color:white;
+}
+.about {
+	background-color: rgb(219, 214, 214, 0.09);
+},
